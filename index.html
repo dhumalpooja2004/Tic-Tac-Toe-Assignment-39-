@@ -33,6 +33,19 @@
      text-align: center;
      margin-top:7px;
     }
+    .reset{
+      margin: 0 auto;
+      display: block;
+      margin-top: 10px;
+      height: 40px;
+      width: 70px;
+      background-color: rgb(160, 231, 234);
+    }
+    .reset:hover{
+      border: 1px solid black;
+      box-shadow: 4px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -60,6 +73,7 @@
     <div class="box" onclick="selectBox(7)"></div>
     <div class="box" onclick="selectBox(8)"></div>
   </div>
+  <button class="reset">Reset </button>
   </div>
   <script>
     const board = [-1, -1, -1, -1, -1, -1, -1, -1, -1];
