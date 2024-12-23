@@ -9,7 +9,7 @@
       display: flex;
       border: 0.3px solid black;
     }
-    .main-box{
+    .board{
       background-color:rgb(193, 234, 235);
       width: 350px;
       height: 350px;    
@@ -44,7 +44,7 @@
       X
     </span>
   </p>
-  <div class="main-box">
+  <div class="board">
     <div class="row">
     <div class="box"></div>
     <div class="box"></div>
@@ -60,5 +60,21 @@
     <div class="box"></div>
     <div class="box"></div>
   </div>
+  <script>
+    const board = [-1, -1, -1, -1, -1, -1, -1, -1, -1];
+    let currentPlayer = "Player1";
+    const renderBoard = () => {
+        const allBoxes = document.querySelectorAll(".box");
+        allBoxes.forEach((boxElement, i) => {
+          if (board[i] === "O") {
+            boxElement.innerHTML = '<img  src="player1.png" height="70px" alt="X" />';
+          } else if (board[i] === "Player1") {
+            boxElement.innerHTML = '<img src="player2.png"  height="70px"alt="O" />';
+          } else {
+            boxElement.innerHTML = "";
+          }
+        });
+      };
+  </script>
 </body>
 </html>
