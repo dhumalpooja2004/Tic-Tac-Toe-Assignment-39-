@@ -31,6 +31,7 @@ function renderBoard(){
 
   const currentPlayerElement = document.getElementById("currentplayer");
   currentPlayerElement.innerText =  currentPlayer;
+  checkforWinner();
 }
 function resetBoard(){
  board.fill(-1);
@@ -41,3 +42,22 @@ const currentPlayerElement = document.getElementById("currentplayer");
 currentPlayerElement.innerText = currentPlayer; 
 
 }
+    function checkforWinner() {
+       if (board[0] == "X" && board[2] == "X") {
+        alert("Player X Wins");
+    }else if (board[3] == "X" && board[4] == "X" && board[5] == "X"){
+        alert("Player X Wins"); 
+    }else if (board[6] == "X" && board[7] == "X" && board[8] == "X"){
+        alert("Player X Wins"); 
+    }else if (board[0] == "X" && board[3] == "X" && board[6] == "X"){
+        alert("Player X Wins"); 
+    }else if (board[1] == "X" && board[4] == "X" && board[7] == "X"){
+        alert("Player X Wins"); 
+    }else if (board[2] == "X" && board[5] == "X" && board[8] == "X"){
+        alert("Player X Wins");
+    }else if (board[0] == "X" && board[4] == "X" && board[8] == "X"){
+        alert("Player X Wins"); 
+    }else if (board[2] == "X" && board[4] == "X" && board[6] == "X"){
+        alert("Player X Wins"); 
+    }
+    }
