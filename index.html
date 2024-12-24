@@ -12,10 +12,13 @@
     .board{
       background-color:rgb(193, 234, 235);
       width: 356px;
-      height: 350px;    
+      height: 356px;    
     padding: 7px;
       margin: 40px auto;
       margin-top: 79px;
+    }
+    .board:hover{
+      box-shadow: 1px 0px 2px 0px;
     }
     
     .heading{
@@ -29,6 +32,7 @@
       width: 110px;
        display: flex;
        padding: 2px;
+       cursor: pointer;
     }
     .current-player{
      text-align: center;
@@ -39,13 +43,15 @@
       display: block;
       margin-top: 20px;
       height: 40px;
-      width: 70px;
+      width: 100px;
       background-color: rgb(160, 231, 234);
+      border-radius: 17px;
     }
     .reset:hover{
       border: 1px solid black;
-      box-shadow: 4px;
+      box-shadow: 4px 4px 8px 0px;
       cursor: pointer;
+      
     }
   </style>
 </head>
