@@ -11,7 +11,7 @@
     }
     .board{
       background-color:rgb(193, 234, 235);
-      width: 350px;
+      width: 356px;
       height: 350px;    
     padding: 7px;
       margin: 40px auto;
@@ -28,6 +28,7 @@
       height: 110px;
       width: 110px;
        display: flex;
+       padding: 2px;
     }
     .current-player{
      text-align: center;
@@ -53,7 +54,7 @@
 
   <p class="current-player">
     current-player:-
-    <span id="current-player">
+    <span id="currentplayer">
       X
     </span>
   </p>
@@ -73,7 +74,7 @@
     <div class="box" onclick="selectBox(7)"></div>
     <div class="box" onclick="selectBox(8)"></div>
   </div>
-  <button class="reset">Reset </button>
+  <button class="reset" onclick="resetBoard()">Reset </button>
   </div>
   <script src="script.js"></script>
 </body>

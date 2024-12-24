@@ -27,7 +27,17 @@ function renderBoard(){
     } else {
       currentPlayer = "X";
     }
-  }
+  
 
-  const currentPlayerElement = document.getElementById("current-player");
+  const currentPlayerElement = document.getElementById("currentplayer");
   currentPlayerElement.innerText =  currentPlayer;
+}
+function resetBoard(){
+ board.fill(-1);
+ renderBoard();
+
+currentPlayer = "X";
+const currentPlayerElement = document.getElementById("currentplayer");
+currentPlayerElement.innerText = currentPlayer; 
+
+}
